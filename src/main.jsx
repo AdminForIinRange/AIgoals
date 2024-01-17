@@ -6,7 +6,7 @@ import "animate.css";
 
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-// Define custom breakpoints
+
 const breakpoints = {
   base: "0px",
   xsm: "320px",
@@ -21,22 +21,22 @@ const breakpoints = {
 
 import "./styles/styles.css"; 
 
-// Extend Chakra UI theme with custom breakpoints and background color
 const theme = extendTheme({
   breakpoints,
   styles: {
     global: {
       html: {
+        
         height: "100%",
         width: "100%",
-        // overflow: "hidden",
+        overflowX: "hidden",
       },
       body: {
         height: "100%",
         width: "100%",
        
         
-        background: ``,
+        background: `linear-gradient(0deg, #0F0F17 0%, #050A30 100%)`,
 
         backgroundRepeat: "no-repeat",
       },

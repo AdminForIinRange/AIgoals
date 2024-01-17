@@ -54,7 +54,7 @@ import "./home.css";
 import { useState, useEffect } from "react";
 export default function Pagetwo() {
   return (
-    <Box
+    <Box  fontFamily={"Poppins"}
       p={"1.5%"}
       w={"100%"}
       h={"1000vh"}

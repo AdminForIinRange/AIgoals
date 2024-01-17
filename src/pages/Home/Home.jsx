@@ -55,7 +55,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
   return (
     <>
-      <Box
+      <Box fontFamily={"Poppins"}
         p={"1.5%"}
         w={"100%"}
         h={"1000vh"}
@@ -63,7 +63,7 @@ export default function Home() {
       >
         <VStack align={"center"} justify={"center"}>
           <HStack mt={"2.5%"}>
-            <Text color={"white"} fontSize={"30px"} zIndex={2}>
+            <Text color={"white"} fontSize={"30px"} fontWeight={700} zIndex={2}>
               Embrace relentless determination, be an achiever.
             </Text>
           </HStack>

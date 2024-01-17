@@ -36,7 +36,7 @@ const theme = extendTheme({
         width: "100%",
        
         
-        background: `linear-gradient(0deg, #0F0F17 0%, #050A30 100%)`,
+      
 
         backgroundRepeat: "no-repeat",
       },

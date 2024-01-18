@@ -175,7 +175,7 @@ export default function Pagetwo() {
       </VStack>
 
       <VStack>
-        <Box w={"80%"} h={"1200px"} p={"2%"}>
+        <Box  w={"80%"} h={"1200px"} p={"2%"}>
           <Text
             className="animate__animated animate__fadeIn  animate__fadeInUp "
             color={"white"}

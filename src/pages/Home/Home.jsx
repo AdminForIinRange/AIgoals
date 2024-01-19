@@ -37,6 +37,11 @@ import {
   MenuList,
   MenuItem,
   Wrap,
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
   Grid,
   GridItem,
   Image,
@@ -48,7 +53,7 @@ import {
 } from "@chakra-ui/react";
 import { FaRunning } from "react-icons/fa";
 import { FaCode, FaArrowRight } from "react-icons/fa6";
-
+import { CheckIcon } from "@chakra-ui/icons";
 import "./home.css";
 
 import { useState, useEffect } from "react";
@@ -57,11 +62,12 @@ export default function Home() {
   return (
     <>
       <Box
+        transition="transform, 0.3s ease-in-out"
         textAlign={"center"}
         fontFamily={"Poppins"}
         p={"1.5%"}
         w={"100%"}
-        h={"8000px"}
+        h={"20000px"}
         background={"linear-gradient(0deg, #0F0F17 0%, #050A30 100%)"}
       >
         <VStack align={"center"} justify={"center"}>
@@ -124,6 +130,12 @@ export default function Home() {
               mt={"20px"}
             >
               <InputGroup
+                boxShadow={"0 0 10px 1px #450DC0"}
+                transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                _hover={{
+                  transform: "scale(1.03)",
+                  boxShadow: "0 0 150px 1px #450DC0",
+                }}
                 w={{
                   base: "100%",
                   xsm: "100%",
@@ -154,6 +166,12 @@ export default function Home() {
                 </InputRightAddon>
               </InputGroup>
               <Button
+                boxShadow={"0 0 10px 1px #450DC0"}
+                transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                _hover={{
+                  transform: "scale(1.03)",
+                  boxShadow: "0 0 150px 1px #450DC0",
+                }}
                 className="animate__animated animate__fadeInUp "
                 colorScheme="purple"
                 mt={"10px"}
@@ -174,7 +192,10 @@ export default function Home() {
               bgGradient="linear(to-r, #8205C1, rgba(0,186,255), #8205C1)"
               bgClip="text"
             >
-              Sky Rocket Growth 🚀
+              <span style={{ textShadow: "0px 0px 100px blue" }}>
+                Sky Rocket Growth{" "}
+              </span>
+              🚀
             </Text>
             <Text
               className="animate__animated animate__fadeIn  animate__fadeInUp "
@@ -186,6 +207,12 @@ export default function Home() {
             </Text>
 
             <Box
+              boxShadow={"0 0 10px 1px #450DC0"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #450DC0",
+              }}
               className="animate__animated animate__fadeIn  animate__fadeInUp "
               mt={"2%"}
               borderRadius={"20px"}
@@ -224,6 +251,7 @@ export default function Home() {
               h={"165px"}
               borderRadius={"10px"}
               p={"1.5%"}
+              boxShadow={" 0px 0px 150px #B54B41"}
             >
               <Text color={"white"} fontWeight={500} fontSize={"35px"}>
                 Tracking Tools
@@ -240,6 +268,7 @@ export default function Home() {
               h={"165px"}
               borderRadius={"10px"}
               p={"1.5%"}
+              boxShadow={" 0px 0px 150px #223DB6"}
             >
               <Text color={"white"} fontWeight={500} fontSize={"35px"}>
                 Productivity
@@ -255,6 +284,7 @@ export default function Home() {
               h={"165px"}
               borderRadius={"10px"}
               p={"1.5%"}
+              boxShadow={" 0px 0px 150px #099D6B"}
             >
               <Text color={"white"} fontWeight={500} fontSize={"35px"}>
                 Analytics
@@ -275,7 +305,10 @@ export default function Home() {
             bgGradient="linear(to-r, rgba(0,186,255), #3333ff, rgba(255,0,129,0.7))"
             bgClip="text"
           >
-            Embrace determination 💪
+            <span style={{ textShadow: "0px 0px 100px blue" }}>
+              Embrace determination
+            </span>
+            💪
           </Text>
           <Text
             className="animate__animated animate__fadeIn  animate__fadeInUp "
@@ -290,6 +323,7 @@ export default function Home() {
         </VStack>
 
         <HStack
+          flexWrap={"wrap"}
           mt={"200px"}
           justify={"center"}
           gap={"20px"}
@@ -298,6 +332,7 @@ export default function Home() {
         >
           <Card
             padding={"0px"}
+            minW={"300px"}
             w={"30%"}
             bgColor={"transparent"}
             boxShadow={"0"}
@@ -317,9 +352,14 @@ export default function Home() {
                 clearly and with purpose.
               </Text>
             </CardHeader>
-            <CardBody></CardBody>
           </Card>
           <Box
+            boxShadow={"0 0 10px 1px #C30078"}
+            transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+            _hover={{
+              transform: "scale(1.03)",
+              boxShadow: "0 0 150px 1px #C30078",
+            }}
             bgGradient="linear-gradient(0deg, rgba(255,0,0, 1) 0%, rgba(129,0,255, 1) 100%) "
             w={"50%"}
             h={"500px"}
@@ -343,8 +383,15 @@ export default function Home() {
           justify={"center"}
           gap={"20px"}
           align={"start"}
+          flexWrap={"wrap"}
         >
           <Box
+            boxShadow={"0 0 10px 1px #470BBE"}
+            transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+            _hover={{
+              transform: "scale(1.03)",
+              boxShadow: "0 0 150px 1px #470BBE",
+            }}
             bgGradient="linear-gradient(0deg, rgba(0,25,255, 0.7) 0%, rgba(196,0,255, 0.7) 100%)"
             w={"50%"}
             h={"500px"}
@@ -362,6 +409,7 @@ export default function Home() {
           </Box>
 
           <Card
+            minW={"300px"}
             padding={"0px"}
             w={"30%"}
             bgColor={"transparent"}
@@ -387,6 +435,12 @@ export default function Home() {
 
         <HStack justify={"center"} mt={"275px"} align={"start"} h={"500px"}>
           <Box
+            boxShadow={"0 0 10px 1px #262FBE"}
+            transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+            _hover={{
+              transform: "scale(1.03)",
+              boxShadow: "0 0 150px 1px #262FBE",
+            }}
             className="animate__animated animate__fadeIn  animate__fadeInUp "
             mt={"2%"}
             borderRadius={"20px"}
@@ -419,10 +473,11 @@ export default function Home() {
           align={"start"}
         >
           <Box
+            boxShadow={" 0px 0px 150px #262FBD"}
             bgGradient="linear-gradient(0deg, rgba(89,0,255,0.7) 0%, rgba(0,141,255,0.7) 100%)"
             minW={"350px"}
             w={"30%"}
-            h={"100%"}
+            h={"200px"}
             borderRadius={"10px"}
             p={"1.5%"}
           >
@@ -438,10 +493,11 @@ export default function Home() {
           </Box>
 
           <Box
+            boxShadow={" 0px 0px 150px #262FBD"}
             bgGradient="linear-gradient(0deg, rgba(89,0,255,0.7) 0%, rgba(0,141,255,0.7) 100%)"
             minW={"350px"}
             w={"30%"}
-            h={"100%"}
+            h={"200px"}
             borderRadius={"10px"}
             p={"1.5%"}
           >
@@ -462,23 +518,26 @@ export default function Home() {
               color={"white"}
               fontSize={"70px"}
               fontWeight={"bold"}
-              bgGradient="linear(to-r, #8205C1, rgba(0,186,255), #8205C1)"
+              bgGradient="linear(to-r, green, rgba(0,186,255), #8205C1)"
               bgClip="text"
             >
-              Try our Tested Presets 🔧
+              <span style={{ textShadow: "0px 0px 100px blue" }}>
+                Try our Tested Presets
+              </span>
+              🔧
             </Text>
             <Text
               className="animate__animated animate__fadeIn  animate__fadeInUp "
               color={"white"}
               fontSize={"25px"}
             >
-              Discover efficiency at your fingertips with our meticulously crafted and tested presets. 
-         
+              Discover efficiency at your fingertips with our meticulously
+              crafted and tested presets.
             </Text>
           </VStack>
 
           <HStack
-          cursor={"pointer"}
+            cursor={"pointer"}
             flexWrap={"wrap"}
             justify={"center"}
             rowGap={"50px"}
@@ -487,12 +546,12 @@ export default function Home() {
             mt={"100px"}
           >
             <Box
-             boxShadow={"0 0 10px 1px #B64145"}
-             transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
-             _hover={{
-               transform: "scale(1.03)",
-               boxShadow: "0 0 150px 1px #B64145",
-             }}
+              boxShadow={"0 0 10px 1px #B64145"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #B64145",
+              }}
               bgGradient="linear-gradient(0deg, rgba(255,0,129,0.7) 0%, rgba(255,245,0,0.7) 100%)"
               minW={"350px"}
               w={"20%"}
@@ -505,8 +564,10 @@ export default function Home() {
                 textAlign={"left"}
                 fontWeight={500}
                 fontSize={"35px"}
+                bgColor={"white"}
+                bgClip={"text"}
               >
-                Frontend developer
+                Frontend developer 👩‍💻
               </Text>
               <HStack h={"70%"} justify={"left"} align={"end"} w={"100%"}>
                 <Text
@@ -523,12 +584,12 @@ export default function Home() {
             </Box>
 
             <Box
-             boxShadow={"0 0 10px 1px #2531BD"}
-             transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
-             _hover={{
-               transform: "scale(1.03)",
-               boxShadow: "0 0 150px 1px #2531BD",
-             }}
+              boxShadow={"0 0 10px 1px #2531BD"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #2531BD",
+              }}
               bgGradient="linear-gradient(0deg, rgba(89,0,255,0.7) 0%, rgba(0,141,255,0.7) 100%)"
               minW={"350px"}
               w={"20%"}
@@ -541,8 +602,10 @@ export default function Home() {
                 textAlign={"left"}
                 fontWeight={500}
                 fontSize={"35px"}
+                bgColor={"white"}
+                bgClip={"text"}
               >
-                Able to Run a marathon
+                Able to Run a marathon 🏃‍♀️
               </Text>
               <HStack h={"70%"} justify={"left"} align={"end"} w={"100%"}>
                 <Text
@@ -558,13 +621,12 @@ export default function Home() {
               </HStack>
             </Box>
             <Box
-             boxShadow={"0 0 10px 1px #0A9D69"}
-             transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
-             _hover={{
-               transform: "scale(1.03)",
-               boxShadow: "0 0 150px 1px #0A9D69",
-             }}
-             
+              boxShadow={"0 0 10px 1px #0A9D69"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #0A9D69",
+              }}
               bgGradient="linear-gradient(0deg, rgba(0,186,255,0.7) 0%, rgba(20,255,0,0.7) 100%) "
               minW={"350px"}
               w={"20%"}
@@ -577,8 +639,10 @@ export default function Home() {
                 textAlign={"left"}
                 fontWeight={500}
                 fontSize={"35px"}
+                bgColor={"white"}
+                bgClip={"text"}
               >
-                Start a side business
+                Start a side business 👨‍💼
               </Text>
               <HStack h={"70%"} justify={"left"} align={"end"} w={"100%"}>
                 <Text
@@ -595,61 +659,371 @@ export default function Home() {
             </Box>
           </HStack>
         </VStack>
-        <Box position='relative' padding='100' >
-  <Divider />
-  <AbsoluteCenter fontSize={"20px"} bg='white' borderRadius={"15px"} px='10'>
-    Or
-  </AbsoluteCenter>
-</Box>
+        <Box position="relative" padding="100">
+          <Divider />
+          <AbsoluteCenter
+            fontSize={"20px"}
+            bg="white"
+            borderRadius={"15px"}
+            px="10"
+          >
+            Or
+          </AbsoluteCenter>
+        </Box>
 
-<HStack className="animate__animated animate__fadeInUp "
-              align={"center"}
-              justify={"center"}
-               >
-            <VStack
-            
-    
+        <HStack
+          className="animate__animated animate__fadeInUp "
+          align={"center"}
+          justify={"center"}
+        >
+          <VStack>
+            <InputGroup
+              boxShadow={"0 0 10px 1px #450DC0"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #450DC0",
+              }}
+              w={{
+                base: "100%",
+                xsm: "100%",
+                ssm: "100%",
+                sm: "120%",
+                md: "170%",
+                lg: "200%",
+                xl: "200%",
+                xxl: "200%",
+                xxxl: "200%",
+              }}
+              h={"60px"}
+              size={"lg"}
+              variant="filled"
+              borderRadius={"20px"}
+              bgColor={"#F5F5F5"}
             >
-              <InputGroup
-                w={{
-                  base: "100%",
-                  xsm: "100%",
-                  ssm: "100%",
-                  sm: "120%",
-                  md: "170%",
-                  lg: "200%",
-                  xl: "200%",
-                  xxl: "200%",
-                  xxxl: "200%",
-                }}
-                h={"60px"}
-                size={"lg"}
-                variant="filled"
-                borderRadius={"20px"}
-                bgColor={"#F5F5F5"}
+              <Input
+                borderWidth={"0px"}
+                h={"100%"}
+                fontSize={"20px"}
+                placeholder="I want to be a frontend developer within 4 Months"
+              />
+              <InputRightAddon h={"100%"}>
+                <Button colorScheme="purple" w={"100%"}>
+                  <FaRunning size={"30px"} />
+                </Button>
+              </InputRightAddon>
+            </InputGroup>
+            <Button
+              boxShadow={"0 0 10px 1px #450DC0"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #450DC0",
+              }}
+              className="animate__animated animate__fadeInUp "
+              colorScheme="purple"
+              mt={"10px"}
+              w={"50%"}
+            >
+              Get Started
+            </Button>
+          </VStack>
+        </HStack>
+
+        <VStack justify={"center"} align={"center"} mt={"250px"}>
+          <VStack align={"left"}>
+            <Text
+              className="animate__animated animate__fadeIn  animate__fadeInUp "
+              color={"white"}
+              fontSize={"70px"}
+              fontWeight={"bold"}
+              bgGradient="linear(to-r,  red, #8205C1, rgba(0,186,255))"
+              bgClip="text"
+            >
+              <span style={{ textShadow: "0px 0px 100px blue" }}>
+                Check out our Premium
+              </span>
+              👑
+            </Text>
+            <Text
+              className="animate__animated animate__fadeIn  animate__fadeInUp "
+              color={"white"}
+              fontSize={"25px"}
+            >
+              Experience the full spectrum of advanced features meticulously
+              crafted to enhance your workflow and empower your success
+            </Text>
+          </VStack>
+
+          <HStack
+            cursor={"pointer"}
+            flexWrap={"wrap"}
+            justify={"center"}
+            rowGap={"50px"}
+            gap={"50px"}
+            align={"start"}
+            mt={"100px"}
+          >
+            <Box
+              boxShadow={"0 0 10px 1px #050A30"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #050A30",
+              }}
+              bgGradient="linear-gradient(0deg, rgb(12, 13, 31, 0.7) 0%, rgb(5, 10, 48, 0.7) 100%)"
+              minW={"350px"}
+              w={"20%"}
+              h={"600px"}
+              borderRadius={"10px"}
+              p={"1.5%"}
+            >
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={800}
+                fontSize={"50px"}
+                bgColor={"white"}
+                bgClip={"text"}
               >
-                <Input
-                  borderWidth={"0px"}
-                  h={"100%"}
-                  fontSize={"20px"}
-                  placeholder="I want to be a frontend developer within 4 Months"
-                />
-                <InputRightAddon h={"100%"}>
-                  <Button colorScheme="purple" w={"100%"}>
-                    <FaRunning size={"30px"} />
-                  </Button>
-                </InputRightAddon>
-              </InputGroup>
+                Free
+              </Text>
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={500}
+                fontSize={"30px"}
+                bgColor={"white"}
+                bgClip={"text"}
+              >
+                $0 / month
+              </Text>
+              <Divider />
+              <HStack h={"70%"} justify={"left"} align={"start"} w={"100%"}>
+                <Text
+                  fontWeight={300}
+                  color={"white"}
+                  textAlign={"left"}
+                  fontSize={"17px"}
+                  mt={"20px"}
+                >
+                  <List spacing={3}>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      limited Goal
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Analytical tools
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Productivity Recommendations
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Progress Tracking
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Reminders
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Basic Reporting
+                    </ListItem>
+                  </List>
+                </Text>
+              </HStack>
               <Button
+                boxShadow={"0 0 10px 1px #2A4365"}
+                transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                _hover={{
+                  transform: "scale(1.03)",
+                  boxShadow: "0 0 150px 1px #2A4365",
+                }}
                 className="animate__animated animate__fadeInUp "
-                colorScheme="purple"
+                bgColor={"#2A4365"}
+                mt={"10px"}
+                color={"white"}
+                w={"50%"}
+              >
+                Start Now
+              </Button>
+            </Box>
+
+            <Box
+              boxShadow={"0 0 10px 1px #223DB6"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #223DB6",
+              }}
+              bgGradient="linear-gradient(0deg, rgba(89,0,255,0.7) 0%, rgba(0,141,255,0.7) 100%)"
+              minW={"350px"}
+              w={"20%"}
+              h={"600px"}
+              borderRadius={"10px"}
+              p={"1.5%"}
+            >
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={800}
+                fontSize={"50px"}
+                bgColor={"white"}
+                bgClip={"text"}
+              >
+                Premium
+              </Text>
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={500}
+                fontSize={"30px"}
+                bgColor={"white"}
+                bgClip={"text"}
+              >
+                $19 / month
+              </Text>
+              <Divider />
+              <HStack h={"70%"} justify={"left"} align={"start"} w={"100%"}>
+                <Text
+                  fontWeight={300}
+                  color={"white"}
+                  textAlign={"left"}
+                  fontSize={"17px"}
+                  mt={"20px"}
+                >
+                  <List spacing={3}>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Unlimited Goal
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Exclusive Analytical tools
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Personalized Productivity Recommendations
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Collaborative Goal Setting and Tracking
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Advanced Reporting
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Time Tracking
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Customizable Dashboards
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Goal Insights
+                    </ListItem>
+                  </List>
+                </Text>
+              </HStack>
+              <Button
+                boxShadow={"0 0 10px 1px #63B3ED"}
+                transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                _hover={{
+                  transform: "scale(1.03)",
+                  boxShadow: "0 0 150px 1px #63B3ED",
+                }}
+                className="animate__animated animate__fadeInUp "
+                bgColor={"#63B3ED"}
+                color={"white"}
                 mt={"10px"}
                 w={"50%"}
               >
-                Get Started
+                Purchase
               </Button>
-            </VStack>
+            </Box>
+            <Box
+              boxShadow={"0 0 10px 1px #B64145"}
+              transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+              _hover={{
+                transform: "scale(1.03)",
+                boxShadow: "0 0 150px 1px #B64145",
+              }}
+              bgGradient="linear-gradient(0deg, rgba(255,0,129,0.7) 0%, rgba(255,245,0,0.7) 100%)"
+              minW={"350px"}
+              w={"20%"}
+              h={"600px"}
+              borderRadius={"10px"}
+              p={"1.5%"}
+            >
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={800}
+                fontSize={"50px"}
+                bgColor={"white"}
+                bgClip={"text"}
+              >
+                Exclusive
+              </Text>
+              <Text
+                color={"white"}
+                textAlign={"left"}
+                fontWeight={500}
+                fontSize={"30px"}
+                bgColor={"white"}
+                bgClip={"text"}
+              >
+                $29 / month
+              </Text>
+              <Divider />
+              <HStack h={"70%"} justify={"left"} align={"start"} w={"100%"}>
+                <Text
+                  fontWeight={300}
+                  color={"white"}
+                  textAlign={"left"}
+                  fontSize={"17px"}
+                  mt={"20px"}
+                >
+                  <List spacing={3}>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      Everything in Premium
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      uhh idk, just give me your money
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={CheckIcon} color="green.500" />
+                      ohh, btw i need a job, i'm web dev
+                    </ListItem>
+                  </List>
+                </Text>
+              </HStack>
+              <Button
+                boxShadow={"0 0 10px 1px #ED8936"}
+                transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                _hover={{
+                  transform: "scale(1.03)",
+                  boxShadow: "0 0 150px 1px #ED8936",
+                }}
+                className="animate__animated animate__fadeInUp "
+                bgColor={"#ED8936"}
+                color={"white"}
+                mt={"10px"}
+                w={"50%"}
+              >
+                Purchase
+              </Button>
+            </Box>
           </HStack>
+        </VStack>
       </Box>
     </>
   );

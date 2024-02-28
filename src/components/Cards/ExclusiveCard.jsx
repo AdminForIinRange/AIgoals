@@ -131,11 +131,11 @@ export default function ExclusiveCard() {
           </ListItem>
           <ListItem>
             <ListIcon as={CheckIcon} color="green.500" />
-            uhh idk, just give me your money
+           Top of the Priority list
           </ListItem>
           <ListItem>
             <ListIcon as={CheckIcon} color="green.500" />
-            ohh, btw i need a job, i'm web dev
+           100gb Free Storage (Teams/Corporation)
           </ListItem>
         </List>
       </Text>

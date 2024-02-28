@@ -1,6 +1,6 @@
 # AIGoals
 
-AIGoals is a frontend application developed for fun. It provides a platform for users to set and track their goals in an interactive and visually appealing interface. Users can create, update, and delete their goals, making the process of goal management efficient and enjoyable.
+AIGoals is an engaging frontend application crafted for pure enjoyment. Born out of a spirit of playful exploration, this project embodies the essence of modern tech-startup culture, seamlessly incorporating design elements inspired by industry giants.
 
 ## Technologies Used
 

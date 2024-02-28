@@ -1,8 +1,50 @@
-# React + Vite
+# AIGoals
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AIGoals is a frontend application developed for fun. It provides a platform for users to set and track their goals in an interactive and visually appealing interface. Users can create, update, and delete their goals, making the process of goal management efficient and enjoyable.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Chakra UI**: A simple, modular, and accessible component library for React.
+- **Firebase**: A platform for building web and mobile applications.
+- **Framer Motion**: A library for creating fluid animations in React.
+- **Vite**: A fast, opinionated web dev build tool that serves your code via native ES Module imports during development.
+- **React Router**: A collection of navigational components that compose declaratively with your application.
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/your-username/aigoals.git`
+2. Navigate to the project directory: `cd aigoals`
+3. Install dependencies: `npm install`
+
+## Usage
+
+- **Development**: Run `npm run dev` to start the development server.
+- **Build**: Run `npm run build` to build the production-ready files.
+- **Linting**: Run `npm run lint` to lint your code.
+- **Preview**: Run `npm run preview` to preview the production build locally.
+- **Host**: Run `npm run host` to build and deploy the application using Firebase.
+
+## Dependencies
+
+The project utilizes various dependencies to enhance functionality and streamline development:
+
+- **@chakra-ui/icons**: Provides a set of accessible icons for use with Chakra UI components.
+- **@chakra-ui/react**: Component library for React applications based on design principles.
+- **@emotion/react**: Provides tools for styling React components with emotion.
+- **@emotion/styled**: Styled components for Emotion.
+- **animate.css**: A library of ready-to-use, cross-browser animations.
+- **firebase**: The Firebase JavaScript SDK.
+- **framer-motion**: A production-ready motion library for React.
+- **react**: A JavaScript library for building user interfaces.
+- **react-dom**: React package for working with the DOM.
+- **react-icons**: Icon library for React applications.
+- **react-router**: Declarative routing for React applications.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

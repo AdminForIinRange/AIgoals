@@ -1,62 +1,12 @@
 import {
-  Step,
-  StepDescription,
-  Input,
-  StepIcon,
-  StepIndicator,
-  StepNumber,
-  StepSeparator,
-  StepStatus,
-  StepTitle,
-  Stepper,
-  HStack,
-  Heading,
-  InputGroup,
-  Card,
-  CardHeader,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  CardBody,
-  Highlight,
-  CardFooter,
-  Divider,
-  AspectRatio,
-  ButtonGroup,
-  Center,
-  Flex,
-  Button,
-  Text,
-  Stack,
+
   Box,
-  useBreakpointValue,
-  Menu,
-  MenuButton,
-  VStack,
-  MenuList,
-  MenuItem,
-  Wrap,
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-  Grid,
-  GridItem,
-  Image,
-  InputLeftAddon,
-  InputRightAddon,
-  useSteps,
-  AbsoluteCenter,
-  Container,
+
 } from "@chakra-ui/react";
-import { FaRunning } from "react-icons/fa";
-import { FaCode, FaArrowRight } from "react-icons/fa6";
-import { CheckIcon } from "@chakra-ui/icons";
+
 import "./home.css";
 
-import { useState, useEffect } from "react";
+
 import OpeningHeader from "../Header/OpeningHeader";
 import Growth from "../Growth/Growth";
 import Embrace from "../../components/Embrace";

@@ -4,7 +4,7 @@ AIGoals is an engaging frontend application crafted for pure enjoyment. Born out
 
 ![image](https://github.com/AdminForIinRange/AIgoals/assets/91888685/26805c21-7d48-4c03-a95b-880a9f0b3ac6)
 
-###Live Deploy 
+### Live Deploy 
 
 https://aigoals.web.app
 

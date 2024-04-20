@@ -85,7 +85,7 @@ export default function Growth() {
           bgRepeat={"repeat"}
 
           bgPos={"center top"}
-          bgImage={AIiphonechatbot}
+          bgImage={aiChatbot}
             bgColor={"white"}
             w={"100%"}
             h={"450px"}

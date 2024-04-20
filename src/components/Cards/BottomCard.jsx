@@ -42,7 +42,7 @@ export default function BottomCard() {
                bgRepeat={"repeat"}
 
                bgPos={"center top"}
-               bgImage={aiChatbot}
+               bgImage={AIiphonechatbot}
    bgSize={"cover"}
                 bgColor={"white"}
                 w={"80%"}

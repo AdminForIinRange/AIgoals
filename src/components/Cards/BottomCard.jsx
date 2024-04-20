@@ -43,7 +43,7 @@ export default function BottomCard() {
 
                bgPos={"center top"}
                bgImage={aiChatbot}
-   
+   bgSize={"cover"}
                 bgColor={"white"}
                 w={"80%"}
                 h={"500px"}

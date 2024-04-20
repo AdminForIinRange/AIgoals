@@ -9,6 +9,10 @@ import {
   VStack,
 
 } from "@chakra-ui/react";
+
+import aiChatbot from "../../img/aiChatbot.png"
+import AIiphonechatbot from "../../img/AIiphonechatbot.png"
+import GoalsBox from "../../img/GoalsBox.png"
 export default function Growth() {
   return (
     
@@ -78,8 +82,12 @@ export default function Growth() {
           className="animate__animated animate__fadeIn  animate__fadeInUp "
         >
           <Box
+          bgRepeat={"repeat"}
+
+          bgPos={"center top"}
+          bgImage={AIiphonechatbot}
             bgColor={"white"}
-            w={"80%"}
+            w={"100%"}
             h={"450px"}
             borderRadius={"20px"}
             mt={"5%"}

@@ -7,7 +7,12 @@ import {
     Box,
   
   } from "@chakra-ui/react";
+  import aiChatbot from "../../img/aiChatbot.png"
+  import AIiphonechatbot from "../../img/AIiphonechatbot.png"
+  import GoalsBox from "../../img/GoalsBox.png"
+  import DashbaordAi from "../../img/DashbaordAi.png"
 export default function BottomCard() {
+
   return (
     <>
 
@@ -34,6 +39,11 @@ export default function BottomCard() {
               className="animate__animated animate__fadeIn  animate__fadeInUp "
             >
               <Box
+               bgRepeat={"repeat"}
+
+               bgPos={"center top"}
+               bgImage={aiChatbot}
+   
                 bgColor={"white"}
                 w={"80%"}
                 h={"500px"}

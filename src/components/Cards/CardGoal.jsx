@@ -11,6 +11,9 @@ import {
     Box,
    
   } from "@chakra-ui/react";
+  import aiChatbot from "../../img/aiChatbot.png"
+import DashbaordAi from "../../img/DashbaordAi.png"
+import GoalsBox from "../../img/GoalsBox.png"
 export default function CardGoal() {
   return (
     <>
@@ -89,6 +92,11 @@ export default function CardGoal() {
     >
       <HStack justify={"center"} align={"end"} w={"100%"} h={"100%"}>
         <Box
+         bgRepeat={"repeat"}
+
+         bgPos={"center top"}
+         bgImage={DashbaordAi}
+         bgSize={"cover"}
           borderTopRadius={"10px"}
           bgColor={"white"}
           justifyContent={"center"}
@@ -140,6 +148,11 @@ export default function CardGoal() {
      >
        <HStack justify={"center"} align={"end"} w={"100%"} h={"100%"}>
          <Box
+          bgRepeat={"repeat"}
+
+          bgPos={"center top"}
+          bgImage={GoalsBox}
+          bgSize={"cover"}
            borderTopRadius={"10px"}
            bgColor={"white"}
            justifyContent={"center"}
